@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <include layout="@layout/toolbar"
+      android:id="@+id/toolbar"/>
+  <com.yemyatthu.fadingtoolbar.CustomScrollView
+      android:id="@+id/detail_scroll"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+      =
+      <ImageView android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:src="@drawable/nightlife"
+          android:scaleType="fitXY"
+          android:id="@+id/detail_image"/>
+      <TextView android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/detail_title"
+          style="@android:style/TextAppearance.DeviceDefault.Widget.ActionMode.Title"
+          android:text="My Lovely Princess"
+          android:padding="16dp"/>
+
+      <TextView
+          android:id="@+id/detail_descrip"
+          android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:text="The design and analysis of efficient data structures has long been recognized as a
+vital subject in computing, for the study of data structures is part of the core of
+every collegiate computer science and computer engineering major program we are
+familiar with. Typically, the introductory courses are presented as a two- or three-
+course sequence. Elementary data structures are often briefly introduced in the first
+programming or introduction to computer science course and this is followed by a
+more in-depth introduction to data structures in the following course(s).
+Furthermore, this course sequence is typically followed at a later point in the
+curriculum by a more in-depth study of data structures and algorithms. We feel that
+the central role of data structure design and analysis in the curriculum is fully
+justified, given the importance of efficient data structures in most software systems,
+including the Web, operating systems, databases, compilers, and scientific
+simulation systems.
+With the emergence of the object-oriented paradigm as the framework of choice for
+building robust and reusable software, we have tried to take a consistent
+objectoriented viewpoint throughout this text. One of the main ideas of the object-
+oriented approach is that data should be presented as being encapsulated with the
+methods that access and modify them. That is, rather than simply viewing data as a
+collection of bytes and addresses, we think of data as instances of an abstract data
+type (ADT) that include a repertory of methods for performing operations on the
+data. Likewise, object-oriented solutions are often organized utilizing common
+design patterns, which facilitate software reuse and robustness. Thus, we present
+each data structure using ADTs and their respective implementations and we
+introduce important design patterns as means to organize those implementations
+into classes, methods, and objects.
+For each ADT presented in this book, we provide an associated Java interface.
+Also, concrete data structures realizing the ADTs are provided as Java classes
+implementing the interfaces above. We also give Java implementations of
+fundamental algorithms (such as sorting and graph traversals) and of sample
+applications of data structures (such as HTML tag matching and a photo album).
+Due to space limitations, we sometimes show only code fragments in the book and
+make additional source code available on the companion Web site,"/>
+    </LinearLayout>
+  </com.yemyatthu.fadingtoolbar.CustomScrollView>
+</FrameLayout>
